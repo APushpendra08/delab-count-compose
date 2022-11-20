@@ -3,13 +3,10 @@ package com.gdg.stateflowz
 import android.os.CountDownTimer
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import javax.inject.Inject
 
-@HiltViewModel
-class TimerViewModel @Inject constructor(): ViewModel() {
+class TimerViewModel: ViewModel() {
 
     companion object{
         const val TOTAL_TIME = 60000L

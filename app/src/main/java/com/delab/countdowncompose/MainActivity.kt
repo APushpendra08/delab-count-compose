@@ -11,12 +11,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import com.delab.countdowncompose.ui.theme.CountComposeTheme
 import com.gdg.stateflowz.TimerViewModel
-import dagger.hilt.android.AndroidEntryPoint
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-@AndroidEntryPoint
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,10 +24,11 @@ class MainActivity : ComponentActivity() {
 
         setContent {
 
-            val viewModel: TimerViewModel = hiltViewModel()
-
             CountComposeTheme {
                 // A surface container using the 'background' color from the theme
+
+//                val viewModel: TimerViewModel = getViewModel()
+                val viewModel: TimerViewModel by viewModel()
 
                 val timerState by viewModel.timerState.collectAsState()
                 val time: String by viewModel.remainingTimeInString.collectAsState()
