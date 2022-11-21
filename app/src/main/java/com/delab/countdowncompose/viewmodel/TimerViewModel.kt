@@ -82,7 +82,7 @@ class TimerViewModel: ViewModel() {
             val millis: Int = (p0 % 1000).toInt()
 
             _remainingTimeInString.value = "$seconds s : $millis millis"
-            Log.d("SAMAA", remainingTimeInString.value)
+            Log.d(TAG, remainingTimeInString.value)
 
         }
 

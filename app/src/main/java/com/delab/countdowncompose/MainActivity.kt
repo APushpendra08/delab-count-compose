@@ -20,7 +20,22 @@ import com.delab.countdowncompose.utils.TimerStates
 import com.delab.countdowncompose.viewmodel.TimerViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
+/**
+ * This is the Main activity containging the main UI for timer with viewmodel
+ *
+ *
+ * Variables used
+ *
+ * viewModel - For TimerViewModel
+ * time - For getting current remaining time in string
+ * timerState - For getting current timer state
+ *
+ *
+ * Compose
+ * MyTimer - Consists of Timer text and Two buttons (Start/pause and Stop)
+ *
+ *
+ */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
