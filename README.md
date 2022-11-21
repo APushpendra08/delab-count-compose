@@ -11,3 +11,5 @@ Completed tasks
 * ✅ The ViewModel should use Flows / StateFlows for the implementation of the logic
 * ✅ The ViewModel should be created by dependency injection with Koin
 
+* ✅ Documentation 
+

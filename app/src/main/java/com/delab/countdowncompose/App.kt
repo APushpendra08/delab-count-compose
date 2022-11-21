@@ -1,7 +1,7 @@
 package com.delab.countdowncompose
 
 import android.app.Application
-import com.gdg.stateflowz.TimerViewModel
+import com.delab.countdowncompose.viewmodel.TimerViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.androidx.viewmodel.dsl.viewModel
